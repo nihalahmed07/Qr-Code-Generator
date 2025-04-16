@@ -22,3 +22,12 @@ qrInput.addEventListener("keyup", () => {
         preValue = "";
     }
 });
+
+qrImg.addEventListener("load", () => {
+    main.classList.add("active");
+    generateBtn.innerText = "Generate QR Code";
+    
+    const downloadLink = document.getElementById("download-link");
+    downloadLink.href = qrImg.src;
+    downloadLink.style.display = "block";
+});

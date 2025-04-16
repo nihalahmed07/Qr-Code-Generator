@@ -8,26 +8,26 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0 10px;
     min-height: 100vh;
-    align-items: center;
     background: #3498DB;
-    justify-content: center;
 }
 
 .pg-title {
     display: flex;
     flex-direction: row;
-    gap: 20px;
     align-items: center;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(0, 0, 0, 0.6);
-    border-radius: 20px;
-    padding: 10px 20px;
     position: fixed;
-    top: 50px;
+    top: 10px;
+    gap: 20px;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.6);
+    font-weight: bold;
+    border-radius: 20px;
+    /* font-size: 20px; */
+    padding: 5px 10px;
 }
 
 .pg-title img {
@@ -97,7 +97,7 @@ header p {
 .qr-code {
     opacity: 0;
     display: flex;
-    padding: 33px 0;
+    padding: 20px 0;
     border-radius: 5px;
     align-items: center;
     pointer-events: none;
@@ -113,6 +113,24 @@ header p {
 
 .qr-code img {
     width: 170px;
+}
+
+
+#download-link {
+    display: none;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #2ECC71;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#download-link:hover {
+    background-color: #27AE60;
 }
 
 footer {
